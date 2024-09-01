@@ -36,6 +36,7 @@
             padding: 30px 0;
             text-align: center;
             margin: auto;
+            width: 90%;
         }
         .room-grid{
             display: flex;
@@ -82,6 +83,27 @@
         text-align: center;
         padding: 10px 0;
        }
+
+       @media (max-width: 768px){
+        .container{
+            width: 90%;
+        }
+        .navbar{
+            display: block;
+            margin: 5px 0;
+        }
+        .room-grid{
+        flex-direction: column;
+        align-items: center;
+        }
+        .room{
+            width: 80%;
+        }
+        form input,form select{
+            width: 90%;
+        }
+       }
+
     </style>
 </head>
 <body>
