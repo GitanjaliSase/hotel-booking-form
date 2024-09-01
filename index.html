@@ -29,7 +29,7 @@
             color: white;
             text-decoration-line:none;
         }
-        h1,h2{
+        h1,h2,h3{
             margin-top: 0;
         }
         #home,#rooms{
@@ -64,6 +64,7 @@
             <a href=""  class="navbar">Contact</a>
           </div>
     </div>
+
     <div id="home">
         <h2>Welcome to Our Luxury Hotel</h2>
         <p>Experience the finest hospitality with our range of luxurious rooms and top-notch services.Book your stay with us today!</p>
@@ -86,9 +87,29 @@
                 <img src="./images/suite-room.jpeg">
                 <h3>Suite</h3>
                  <p>Experience luxury with our exclusive suites.</p>
-            </div>
-            
+            </div>    
         </div>
+    </div>
+
+    <div id="booking">
+        <h2>Book your stay</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" required>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" required>
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" required>
+                <option>Standard Room</option>
+                <option>Deluxe Room</option>
+                <option>Suite Room</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
     </div>
 </body>
 </html>
